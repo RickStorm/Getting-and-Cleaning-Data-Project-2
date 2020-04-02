@@ -6,28 +6,28 @@ The <mark>run_analysis.R</mark> script performs the data preparation and then fo
 
 # 2.Assign each data to variables
 
-<mark>features <- features.txt</mark> : 561 rows, 2 columns
+<mark>* **features** <- features.txt</mark> : 561 rows, 2 columns
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 
-<mark>activities <- activity_labels.txt</mark> : 6 rows, 2 columns
+<mark>* **activities** <- activity_labels.txt</mark> : 6 rows, 2 columns
 List of activities performed when the corresponding measurements were taken and its codes (labels)
 
-<mark>subject_test <- test/subject_test.txt</mark> : 2947 rows, 1 column
+<mark>* **subject_test** <- test/subject_test.txt</mark> : 2947 rows, 1 column
 contains test data of 9/30 volunteer test subjects being observed
 
-<mark>x_test <- test/X_test.txt</mark> : 2947 rows, 561 columns
+<mark>* **x_test** <- test/X_test.txt</mark> : 2947 rows, 561 columns
 contains recorded features test data
 
-<mark>y_test <- test/y_test.txt</mark> : 2947 rows, 1 columns
+<mark>* **y_test** <- test/y_test.txt</mark> : 2947 rows, 1 columns
 contains test data of activities’code labels
 
-<mark>subject_train <- test/subject_train.txt</mark> : 7352 rows, 1 column
+<mark>* **subject_train** <- test/subject_train.txt</mark> : 7352 rows, 1 column
 contains train data of 21/30 volunteer subjects being observed
 
-<mark>x_train <- test/X_train.txt</mark> : 7352 rows, 561 columns
+<mark>* **x_train** <- test/X_train.txt</mark> : 7352 rows, 561 columns
 contains recorded features train data
 
-<mark>y_train <- test/y_train.txt</mark> : 7352 rows, 1 columns
+<mark>* **y_train** <- test/y_train.txt</mark> : 7352 rows, 1 columns
 contains train data of activities’code labels
 
 # 3.Merges the training and the test sets to create one data set

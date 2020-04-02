@@ -32,33 +32,41 @@ contains train data of activities’code labels
 
 # 3.Merges the training and the test sets to create one data set
 
-<mark>X</mark> (10299 rows, 561 columns) is created by merging x_train and x_test using rbind() function
+<mark>* **X**</mark> (10299 rows, 561 columns) is created by merging x_train and x_test using rbind() function
 
-<mark>Y</mark> (10299 rows, 1 column) is created by merging y_train and y_test using rbind() function
+<mark>* **Y**</mark> (10299 rows, 1 column) is created by merging y_train and y_test using rbind() function
 
-<mark>Subject</mark> (10299 rows, 1 column) is created by merging subject_train and subject_test using rbind() function
+<mark>* **Subject**</mark> (10299 rows, 1 column) is created by merging subject_train and subject_test using rbind() function
 
-<mark>Merged_Data</mark> (10299 rows, 563 column) is created by merging Subject, Y and X using cbind() function
+<mark>* **Merged_Data**</mark> (10299 rows, 563 column) is created by merging Subject, Y and X using cbind() function
 
 # 4.Extracts only the measurements on the mean and standard deviation for each measurement
 
-<mark>TidyData</mark> (10299 rows, 88 columns) is created by subsetting Merged_Data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
+<mark>**TidyData**</mark> (10299 rows, 88 columns) is created by subsetting Merged_Data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
 
 # 5.Uses descriptive activity names to name the activities in the data set
+
 Entire numbers in code column of the TidyData replaced with corresponding activity taken from second column of the activities variable
 
 # 6.Appropriately labels the data set with descriptive variable names
-<mark>code</mark> column in TidyData renamed into activities
-All <mark>Acc</mark> in column’s name replaced by Accelerometer
-All <mark>Gyro</mark> in column’s name replaced by Gyroscope
-All <mark>BodyBody</mark> in column’s name replaced by Body
-All <mark>Mag</mark> in column’s name replaced by Magnitude
-All start with character <mark>f</mark> in column’s name replaced by Frequency
-All start with character <mark>t</mark> in column’s name replaced by Time
+
+<mark>* **code**</mark> column in TidyData renamed into activities
+
+* All <mark>**Acc**</mark> in column’s name replaced by Accelerometer
+
+* All <mark>**Gyro**</mark> in column’s name replaced by Gyroscope
+
+* All <mark>**BodyBody**</mark> in column’s name replaced by Body
+
+* All <mark>**Mag**</mark> in column’s name replaced by Magnitude
+
+* All start with character <mark>**f**</mark> in column’s name replaced by Frequency
+
+* All start with character <mark>t</mark> in column’s name replaced by Time
 
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-<mark>FinalData</mark> (180 rows, 88 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
+<mark>**FinalData**</mark> (180 rows, 88 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
 
-Export <mark>FinalData</mark> into <mark>FinalData.txt</mark> file.
+Export <mark>**FinalData**</mark> into <mark>**FinalData.txt**</mark> file.
 
